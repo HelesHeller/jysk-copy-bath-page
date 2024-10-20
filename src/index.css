@@ -1,0 +1,92 @@
+/* Установка общих стилей для всего приложения */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Установка стилизации для заголовков */
+h2, h3 {
+  margin: 0;
+  padding: 10px 0;
+  color: #333;
+}
+
+/* Центрирование контента */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Общие отступы и стили для кнопок */
+button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0055a5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  background-color: #003366;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Обеспечивает правильное центрирование контента */
+.app-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #003366;
+  padding: 10px;
+}
+
+.app-header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.app-header nav a {
+  margin-left: 15px;
+  color: white;
+}
