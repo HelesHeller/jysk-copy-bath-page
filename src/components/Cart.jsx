@@ -1,12 +1,12 @@
+
 import './Cart.css';
-import PropTypes from 'prop-types'; // Добавляем импорт PropTypes
 
 const Cart = ({ cartItems }) => {
     return (
         <div className="cart-page">
             <h2>Корзина</h2>
             {cartItems.length === 0 ? (
-                <p>Ваша корзина порожня</p>
+                <p>Ваша корзина пуста</p>
             ) : (
                 <ul>
                     {cartItems.map((item, index) => (
@@ -18,16 +18,6 @@ const Cart = ({ cartItems }) => {
             )}
         </div>
     );
-};
-
-// Добавляем валидацию пропсов
-Cart.propTypes = {
-    cartItems: PropTypes.arrayOf(
-        PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            price: PropTypes.number.isRequired,
-        })
-    ).isRequired,
 };
 
 export default Cart;

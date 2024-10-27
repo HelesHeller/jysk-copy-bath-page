@@ -1,9 +1,9 @@
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import CategoryPage from './components/CategoryPage';
 import CategoryProducts from './components/CategoryProducts';
 import Cart from './components/Cart';
 import './App.css';
-import { useState } from 'react';
 
 const App = () => {
     const [cartItems, setCartItems] = useState([]);
@@ -16,7 +16,7 @@ const App = () => {
         <Router>
             <header className="app-header">
                 <nav>
-                    <Link to="/">Ванна и подкатегории</Link>
+                    <Link to="/">Ванна и підкатегории</Link>
                     <Link to="/cart">Корзина ({cartItems.length})</Link>
                 </nav>
             </header>
